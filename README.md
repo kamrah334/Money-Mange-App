@@ -66,10 +66,12 @@ git push -u origin main
    - Go to [Vercel Dashboard](https://vercel.com/dashboard)
    - Click **"Add New"** → **"Project"**
    - Import your GitHub repository
-   - **Framework Preset**: Vite
-   - **Build Command**: `npm run build` (should auto-detect)
-   - **Output Directory**: `dist` (should auto-detect)
-   - **Install Command**: `npm install`
+   - Vercel will read the `vercel.json` configuration automatically
+   - If prompted, use these settings:
+     - **Framework Preset**: Other
+     - **Build Command**: `vite build`
+     - **Output Directory**: `dist/public`
+     - **Install Command**: `npm install`
    - Click **"Deploy"**
 
 3. **Set up Google OAuth (for Drive backup):**

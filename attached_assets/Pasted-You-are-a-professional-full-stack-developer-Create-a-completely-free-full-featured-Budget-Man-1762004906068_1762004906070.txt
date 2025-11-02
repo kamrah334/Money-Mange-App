@@ -1,0 +1,72 @@
+You are a professional full-stack developer.
+
+Create a **completely free, full-featured Budget Manager web app** that works offline and includes Google Drive backup and restore.
+
+⚙️ Tech Stack:
+- Frontend: Next.js + React + Tailwind CSS
+- Charts: Recharts
+- Offline Database: IndexedDB (via Dexie.js or idb)
+- Backup/Restore: Google Drive API (OAuth 2.0)
+- Deployment: Vercel
+- NO paid APIs, NO OpenAI
+
+💡 Features Overview:
+- App Name: Smart Budget Manager (Free Edition)
+- Fully Offline PWA (installable on desktop/mobile)
+- Save transactions (Cash In / Cash Out)
+- Show Total In, Total Out, and Balance
+- History view with filters (by date, category, or amount)
+- Analytics: pie & bar charts by category and month
+- Backup & Restore data using Google Drive (JSON file)
+- CSV export (for manual download)
+- Light/Dark mode toggle
+- Mobile-friendly responsive UI
+
+🧠 Smart Categorization (Free AI Logic)
+- Use **local keyword-based categorization** (no external APIs)
+- Example:
+    - if text includes ["salary", "bonus", "income"] → Category = Income
+    - if text includes ["food", "meal", "restaurant"] → Category = Food
+    - if text includes ["rent", "bills", "electricity"] → Category = Utilities
+    - if text includes ["shopping", "clothes", "store"] → Category = Shopping
+    - else → Category = Others
+- Works fully offline in browser with no internet needed
+
+📁 Data Management:
+- IndexedDB stores transactions locally
+- Backup JSON to Google Drive
+- Restore JSON from Google Drive
+- Optional “Export to CSV” button for manual download
+- Daily auto-backup (when online)
+- Users can choose manual backup anytime
+
+🎨 UI/UX:
+- Dashboard Page → Total Cash In, Total Cash Out, Balance
+- Add Transaction Page → form for amount, type (in/out), description
+- History Page → scrollable list with edit/delete buttons
+- Analytics Page → charts & summaries
+- Settings Page → dark/light mode, Google Drive sync, export options
+
+🔒 Security & Privacy:
+- OAuth 2.0 for Google Drive (user’s data stays private)
+- Sanitize user input (no injection or XSS)
+- No server-side database (local only)
+- No paid APIs or hidden network calls
+
+📦 Deployment:
+- Generate full Next.js + Tailwind app ready for GitHub + Vercel
+- Include `README.md` with:
+  - Local setup instructions
+  - How to deploy on Vercel
+  - How to set up Google OAuth 2.0 credentials
+  - How backup & restore work
+  - How to use the app offline
+
+🎯 Goal:
+Generate a full production-ready codebase that:
+1. Works offline as a PWA
+2. Stores data locally
+3. Backs up to Google Drive
+4. Categorizes automatically using free logic
+5. Looks modern and professional
+6. Deploys on Vercel with zero cost
